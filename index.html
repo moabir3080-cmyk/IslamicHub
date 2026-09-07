@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IslamicHub - লগইন</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <!-- লোগো এবং শিরোনাম -->
+            <div class="logo-section">
+                <h1>🕌 IslamicHub</h1>
+                <p>আপনার ইসলামিক সঙ্গী</p>
+            </div>
+
+            <!-- লগইন ফর্ম -->
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">ইমেইল</label>
+                    <input type="email" id="email" name="email" placeholder="আপনার ইমেইল লিখুন" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">পাসওয়ার্ড</label>
+                    <input type="password" id="password" name="password" placeholder="আপনার পাসওয়ার্ড লিখুন" required>
+                </div>
+
+                <!-- মনে রাখুন এবং ভুলে গেছেন -->
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" name="remember"> আমাকে মনে রাখুন
+                    </label>
+                    <a href="#" class="forgot-password">পাসওয়ার্ড ভুলে গেছেন?</a>
+                </div>
+
+                <!-- লগইন বাটন -->
+                <button type="submit" class="btn-login">লগইন করুন</button>
+            </form>
+
+            <!-- বা বিভাজক -->
+            <div class="divider">অথবা</div>
+
+            <!-- অতিথি মোড -->
+            <button class="btn-guest" onclick="guestLogin()">অতিথি হিসেবে প্রবেশ করুন</button>
+
+            <!-- নতুন অ্যাকাউন্ট -->
+            <div class="signup-link">
+                <p>নতুন ব্যবহারকারী? <a href="register.html">এখানে সাইন আপ করুন</a></p>
+            </div>
+        </div>
+
+        <!-- পাদদেশ -->
+        <footer class="login-footer">
+            <p>&copy; 2026 IslamicHub. সমস্ত অধিকার সংরক্ষিত।</p>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
